@@ -1,34 +1,50 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { CiStar } from "react-icons/ci";
 
 function App() {
-  const [count, setCount] = useState(0)
+  type typesQualification = number[]
 
+
+  const [qualification, setQualification] = useState<typesQualification>([])
+
+  const calculateNumberQualification = ():number =>{
+    const LengQualification = qualification.length
+    
+      let sumQualification = 0
+      qualification.forEach((num) =>{
+        sumQualification = sumQualification + num
+      })
+
+      if (sumQualification < 1) {
+        return 0
+      }
+      
+      const average = sumQualification /  LengQualification 
+      return average
+  }
+
+  type typesValueHandle = 1 | 2 | 3 | 4 | 5 ;
+
+  const handleQualification = (value: typesValueHandle)=>{
+    setQualification([...qualification, value])
+  }
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <h1>Granding system</h1>
+        <div className='all-star-qualification'>
+          <CiStar className='star-qualification' onClick={()=>{handleQualification(1)}}/>
+          <CiStar className='star-qualification' onClick={()=>{handleQualification(2)}}/>
+          <CiStar className='star-qualification'onClick={()=>{handleQualification(3)}}/>
+          <CiStar className='star-qualification'onClick={()=>{handleQualification(4)}}/>
+          <CiStar className='star-qualification'onClick={()=>{handleQualification(5)}}/>
+        </div>
+
+        <div>
+          <p>calificacion</p>
+          <p>{calculateNumberQualification()}</p>
+        </div>
+    </div>
   )
 }
 

@@ -11,10 +11,15 @@
   /* text-align: center; */
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body{
   display: flex;
   justify-content: center;
+
 }
 
 
@@ -69,3 +74,61 @@ body{
   transform: rotate(-70deg);
   content: '';
 }
+
+
+
+
+
+/* ESTILOS DE LA CARTA DE PRODUCTOS  */
+.content-card{
+  margin: 0 20px;
+}
+
+.all-products{
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: aqua; */
+}
+
+.card-products{
+  margin: 10px 10px;
+  background-color: black;
+  padding: 10px; 
+  border-radius: 10px;
+
+  width: 350px;
+}
+
+
+
+
+/* USUARIOS  */
+.content-user-system{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.all-users-system{
+  /* top: 0; */
+  /* background-color: aquamarine; */
+}
+
+.content-users{
+  padding: 12px;
+  position: absolute;
+  right: 10px;
+  background-color: rgb(25, 27, 27);
+}
+
+.content-user-activate{
+  display: none;
+}
+
+.row-users{
+  /* background-color: aquamarine; */
+  padding: 5px 0;
+  border-top: #ffffff solid 1px;
+  cursor: pointer;
+}
+

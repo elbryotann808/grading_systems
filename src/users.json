@@ -1,0 +1,36 @@
+{
+    "users":[
+        {
+            "id": 1, 
+            "name": "bryan",
+            "username": "@elbrayan",
+            "age": 19
+        },
+         {
+            "id": 2, 
+            "name": "Sara",
+            "username": "@la_sarita123",
+            "age": 19
+        },
+         {
+            "id": 3, 
+            "name": "Danilo",
+            "username": "@danilooo",
+            "age": 19
+        },
+         {
+            "id": 4, 
+            "name": "Jhoan",
+            "username": "@jhoann450",
+            "age": 19
+        },
+         {
+            "id": 5, 
+            "name": "Diana",
+            "username": "@dianitaa12",
+            "age": 19
+        }
+    ]
+}
+
+

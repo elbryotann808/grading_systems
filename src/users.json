@@ -1,30 +1,35 @@
 {
     "users":[
-        {
+        {   
+            "icon": "../img/icons-user/user-1.png",
             "id": 1, 
             "name": "bryan",
             "username": "@elbrayan",
             "age": 19
         },
-         {
-            "id": 2, 
-            "name": "Sara",
-            "username": "@la_sarita123",
-            "age": 19
-        },
-         {
+        {
+             "icon": "../img/icons-user/user-2.png",
+             "id": 2, 
+             "name": "Sara",
+             "username": "@la_sarita123",
+             "age": 19
+            },
+            {
+            "icon": "../img/icons-user/user-3.png",
             "id": 3, 
             "name": "Danilo",
             "username": "@danilooo",
             "age": 19
         },
-         {
+        {
+            "icon": "../img/icons-user/user-4.png",
             "id": 4, 
             "name": "Jhoan",
             "username": "@jhoann450",
             "age": 19
         },
-         {
+        {
+            "icon": "../img/icons-user/user-5.png",
             "id": 5, 
             "name": "Diana",
             "username": "@dianitaa12",

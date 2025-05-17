@@ -1,15 +1,23 @@
-// import GrandingSystem from "./components/GrandingSystem"
+import AlertSystem from "./components/AlertSystem"
 import CardsProduct from "./components/CardsProduct"
 import UsersSystem from "./components/UsersSystem"
+import GrandingProvider from "./context/GrandingProvider"
 
 function App() {
-
   return (
-    <div>
-      {/* <GrandingSystem/> */}
+      <GrandingProvider>
+
       <UsersSystem/>
+      <div onClick={()=>{
+        localStorage.clear()
+      }}>
+          <button>Clear</button>
+        </div>
+
+      
       <CardsProduct/>
-    </div>
+        <AlertSystem/> 
+      </GrandingProvider>
   )
 }
 

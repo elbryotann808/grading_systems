@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import { GrandingContext } from "./GrandingContext"
 
-
+//Funcion para trear los funciones y parametro del contexto
 export const useContextGranding = () =>{
   const context = useContext(GrandingContext)
   if (!context) {

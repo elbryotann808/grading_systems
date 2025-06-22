@@ -1,0 +1,51 @@
+.notification{
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  bottom: 0;
+  right: 0;
+  width: 35%;
+  z-index: 1;
+}
+
+.notification__box{
+  background-color: #cecece;
+  color: black;
+  padding: 10px;
+  border-top: 10px green solid;
+  border-radius: 8px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  box-shadow: 4px 4px 20px 1px rgba(116, 231, 34, 0.507);
+}
+
+
+@media (max-width: 1200px){
+  .notification{
+    width: 55%; 
+  }
+}
+
+@media (max-width: 451px){
+  .notification{
+    width: 80%; 
+  }
+}
+
+@media (max-width: 355px){
+  .notification{
+    width: 90%; 
+  }
+  .notification__title{
+    font-size: 1.3rem;
+  }
+
+  .notification__text{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 300px){
+  .notification{
+    width: 95%; 
+  }
+}

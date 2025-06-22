@@ -1,0 +1,17 @@
+
+.rating{
+  display: flex;
+  align-items: center;
+}
+
+.rating__star{
+  display: flex;
+}
+
+.rating__value{
+  font-size: 1.1rem;
+  color: #cbcbcb;
+  margin-left: 3px;
+}
+
+
